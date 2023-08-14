@@ -1,14 +1,20 @@
-import '../style/house.css';
-import CustomCarousel from '../components/CustomCarousel';
+import Carrousel from '../components/Carrousel';
 import jsonData from '../data/data.json';
+import { useParams } from 'react-router-dom';
+
+import '../style/house.css';
+
 
 const House = () => {
-    const images = jsonData.map((accommodation) => accommodation.cover);
+    const id = useParams()
+    const datas = jsonData.find((house) => house.id === id.id);
+
     return (
         <div className="Home">
-            <CustomCarousel images={images} />
+            <Carrousel images={datas.pictures} />
         </div>
     );
 };
 
 export default House;
+
