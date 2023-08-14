@@ -1,0 +1,22 @@
+.header {
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+}
+.logokasa {
+   padding: 0;
+   width: 210px;
+   height: 68px;
+}
+.nav a {
+   margin-left: 30px;
+   font-size: 25px;
+   color: #ff6060;
+   text-decoration: none;
+}
+.nav a:hover {
+   text-decoration: underline;
+}
