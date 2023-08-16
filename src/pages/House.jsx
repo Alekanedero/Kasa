@@ -3,6 +3,7 @@ import jsonData from '../data/data.json';
 import { useParams } from 'react-router-dom';
 
 import '../style/house.css';
+import Tag from '../components/Tag.jsx';
 
 
 const House = () => {
@@ -11,7 +12,8 @@ const House = () => {
 
     return (
         <div className="Home">
-            <Carrousel images={datas.pictures} />
+            {/* <Carrousel images={datas.pictures} /> */}
+            <Tag tags={datas.tags} />
         </div>
     );
 };
