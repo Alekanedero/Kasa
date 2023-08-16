@@ -1,9 +1,12 @@
 import jsonData from '../data/data.json';
 import { useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
-import Tag from '../components/Tag.jsx';
+import Tag from '../components/Tag';
+import Rating from '../components/Rating';
+import Collapse_double from '../components/Collapse';
 
 import '../style/house.css';
+
 
 
 const House = () => {
@@ -12,7 +15,7 @@ const House = () => {
 
     return (
         <div className="house">
-            <Carrousel images={datas.pictures} />
+            {/* <Carrousel images={datas.pictures} /> */}
             <div className='info_container'>
                 <div>
                     <h1 className='title'>{datas.title}</h1>
@@ -23,7 +26,15 @@ const House = () => {
                     <img src={datas.host.picture} alt="photo de profil" className='img_profil'/>
                 </div>
             </div>
-            <Tag tags={datas.tags} />
+            <div className='tag_rating_container'>
+                <Tag tags={datas.tags} />
+                <Rating rating={datas.rating} />
+            </div>
+            <div className='desc_equip_container'>
+                <Collapse_double description={datas.description}/>
+                <Collapse_double equipements={datas.equipement}/>
+            </div>
+            
         </div>
     );
 };

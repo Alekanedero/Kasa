@@ -1,21 +1,10 @@
-import { useState } from 'react';
-import chevron from '../assets/chevron.png';
-import '../style/collapse.css';
+import React from 'react'
 
-const Collapse = (props) => {
-   const { title, details } = props;
-
-   const [isOpen, setIsOpen] = useState(false);
-
-   // toggle = activer ou desactiver
-   const toggle = () => {
-      setIsOpen(!isOpen);
-   };
-
-   return (
-      <div className="collapse">
+function Collapse_double({ description, equipements }) {
+  return (
+    <div className="collapse">
          <div className="collapse__menu" onClick={toggle}>
-            <h3 className="collapse__title">{title}</h3>
+            <h3 className="collapse__title">Description</h3>
             <img
                className={
                   isOpen
@@ -41,7 +30,7 @@ const Collapse = (props) => {
             )}
          </div>
       </div>
-   );
-};
+  )
+}
 
-export default Collapse;
+export default Collapse_double

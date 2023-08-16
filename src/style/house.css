@@ -53,4 +53,15 @@
     height: 64px;
     background-color: #C4C4C4;
 }
+.tag_rating_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.desc_equip_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
 

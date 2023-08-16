@@ -1,13 +1,13 @@
 import '../style/tag.css';
 
-function Tag({tags}) {
+function Tag( {tags}) {
   return (
     <div className='tag_container'>
-        {tags.map((tag, index) => (
-            <div key={`${tag.id}-${index}`}>
-                <p className='tag'>{tag}</p>
-            </div>
-        ))}
+      {tags.map((tag, index) => (
+        <div key={`${tag}-${index}`}>
+          <p className='tag'>{tag}</p>
+        </div>
+      ))}
     </div>
   )
 }
