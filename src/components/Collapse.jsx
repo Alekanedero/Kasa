@@ -1,9 +1,9 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import chevron from '../assets/chevron.png';
 import '../style/collapse.css';
 
-const Collapse = (props) => {
-   const { title, details } = props;
+const Collapse = ({ title, details }) => {
 
    const [isOpen, setIsOpen] = useState(false);
 
@@ -42,6 +42,11 @@ const Collapse = (props) => {
          </div>
       </div>
    );
+};
+
+Collapse.propTypes = {
+   title: PropTypes.string.isRequired,
+   details: PropTypes.string.isRequired,
 };
 
 export default Collapse;

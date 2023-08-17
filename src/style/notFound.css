@@ -1,23 +1,27 @@
-h1 {
-   color: #ff6060;
+.not {
+   margin: 0;
+   padding: 0;
    text-align: center;
-   font-weight: 700;
-   font-size: 288px;
-   margin-bottom: 30px;
 }
-
-.texte_erreur {
+.not__title {
    color: #ff6060;
-   text-align: center;
+   font-weight: bold;
+   font-size: 288px;
+   letter-spacing: 0em;
+   margin: 0 auto;
+   margin-top: 50px;
+   padding: 0;
+}
+.not__description {
+   color: #ff6060;
    font-size: 36px;
    font-weight: 500;
-   margin-bottom: 30px;
+   margin: 0 auto;
+   margin-bottom: 100px;
 }
-
-.lien_accueil {
+.not__link {
    color: #ff6060;
    font-size: 18px;
-   display: block;
-   text-align: center;
+   font-weight: 500;
    margin-top: 150px;
 }

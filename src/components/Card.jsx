@@ -4,20 +4,20 @@ import PropTypes from 'prop-types';
 const Card = ({ cover, title }) => {
     return (
         <article className="card">
-            <div className="container_img">
-                <img src={cover} alt={title} className="card_img" />
-                <div className="card_gradient" />
+            <div className="card__container__img">
+                <img src={cover} alt={title} className="card__img" />
+                <div className="card__gradient" />
             </div>
-            <div className="card_content">
-                <h3 className="card_title">{title}</h3>
+            <div className="card__content">
+                <h3 className="card__title">{title}</h3>
             </div>
         </article>
     );
 };
 
 Card.propTypes = {
-    cover: PropTypes.string.isRequired, // cover est requis et doit être une chaîne (string)
-    title: PropTypes.string.isRequired, // title est requis et doit être une chaîne (string)
+    cover: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
 };
 
 export default Card;

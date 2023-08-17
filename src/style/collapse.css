@@ -1,9 +1,8 @@
 .collapse {
     margin: auto;
-    margin-top: 15px;
-    width: 80%;
+    margin-top: 0;
+    width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
     overflow: hidden;
 }
 .collapse__menu {
@@ -17,7 +16,6 @@
 }
 .collapse__title {
     color: #fff;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -51,26 +49,25 @@
 .collapse__details--collapsed {
     max-height: 0;
     opacity: 0;
-    padding: 10px;
     padding-top: 0;
     background-color: #fff;
     transition: all 0.2s;
 }
 .collapse__details--object {
     margin: 0;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    padding: 0 10px 0 10px;
 }
 .collapse__details--p {
     margin: 0;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    padding: 10px;
 }

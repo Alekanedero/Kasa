@@ -6,15 +6,14 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-.container_img {
+.card__container__img {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     background: linear-gradient(to bottom, #ff6060 30%, #995353 100%);
 }
-
-.card_content {
+.card__content {
     position: absolute;
     bottom: 0;
     color: white;
@@ -24,19 +23,17 @@
     padding: 0px 20px 0 20px;
     line-height: 25px;
 }
-
-.card_title {
+.card__title {
     font-size: 18px;
     font-weight: 500;
 }
-
-.card_img {
+.card__img {
     width: 100%;
     height: 100%;
     border-radius: 20px;
     object-fit: cover;
 }
-.card_gradient {
+.card__gradient {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -44,7 +41,7 @@
     height: 150px;
     background-image: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.8) 0%,
         transparent 100%
     );
     border-radius: 20px;

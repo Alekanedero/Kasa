@@ -1,12 +1,15 @@
 html,
 body,
 #root {
+   box-sizing: border-box;
    font-family: 'Montserrat', sans-serif;
    margin: 0;
    padding: 0;
    width: 100%;
    height: 100%;
 }
+
+/* Pour coller le footer en bas de page */
 .app-container {
    display: flex;
    flex-direction: column;

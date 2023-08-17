@@ -6,15 +6,17 @@ import aboutData from '../data/aboutData.json';
 import '../style/about.css';
 
 const About = () => {
+
     return (
         <div className="about">
             <Banner title="" img={bannerImg} />
             <div className="about__collapses-container">
-                {aboutData.map((item, index) => (
+                {aboutData.map((element, index) => (
                     <Collapse
-                        key={`${item.title}-${index}`}
-                        title={item.title}
-                        details={item.details}
+                        className="about__collapse"
+                        key={`${element}-${index}`}
+                        title={element.title}
+                        details={element.details}
                     />
                 ))}
             </div>

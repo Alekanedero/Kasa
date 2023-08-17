@@ -1,6 +1,7 @@
 import '../style/tag.css';
 
 function Tag( {tags}) {
+
   return (
     <div className='tag_container'>
       {tags.map((tag, index) => (
@@ -9,7 +10,7 @@ function Tag( {tags}) {
         </div>
       ))}
     </div>
-  )
-}
+  );
+};
 
 export default Tag

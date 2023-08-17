@@ -1,19 +1,16 @@
 .house {
-    font-family: Montserrat;
     color: #FF6060;
     margin: 0 100px 0 100px;
-    /* min-height: 600px; */
 }
 
 /* container title+loc et name+img */
-.info_container {
+.info__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
 }
-
-.title {
+.info__container__title {
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
@@ -22,7 +19,7 @@
     margin: 0;
     padding: 0;
 }
-.location {
+.info__container__location {
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -30,7 +27,9 @@
     text-align: left;
     margin: 0 0 10px 0;
 }
-.name_img_container {
+
+/* container name+img */
+.name__img__container {
     display: flex;
     justify-content:center;
     align-items:center;
@@ -47,19 +46,20 @@
     width: 70px;
     margin: 0;
 }
-.img_profil {
+.img__profil {
     border-radius: 50%;
     object-fit: cover;
     width: 64px;
     height: 64px;
     background-color: #C4C4C4;
 }
-.tag_rating_container {
+.tag__rating__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 0 10px 0;
 }
-.desc_equip_container {
+.desc__equip__container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
