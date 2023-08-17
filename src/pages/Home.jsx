@@ -2,7 +2,7 @@ import bannerImg from '../assets/home.png';
 import Banner from '../components/Banner';
 import Gallery from '../components/Gallery';
 
-// import '../style/home.css';
+import '../style/home.css'
 
 const Home = () => {
     return (

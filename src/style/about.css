@@ -1,6 +1,9 @@
 .about {
    width: 100%;
-   margin-bottom: 100px;
+   height: 100%;
+
+   /* test footer bas de page */
+   /* flex-grow: 1; */
 }
 .about__collapses-container {
    display: flex;

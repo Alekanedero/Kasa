@@ -35,9 +35,9 @@ const Collapse = (props) => {
          >
             {/* vérifie si details est un object */}
             {typeof details === 'object' ? (
-               details.map((item, index) => <p key={index}>{item}</p>)
+               details.map((item, index) => <p className='collapse__details--object' key={index}>{item}</p>)
             ) : (
-               <p>{details}</p>
+               <p className='collapse__details--p'>{details}</p>
             )}
          </div>
       </div>

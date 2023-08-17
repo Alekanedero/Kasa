@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Carrousel from '../components/Carrousel';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
-import Collapse_double from '../components/Collapse';
+import Collapse from '../components/Collapse';
 
 import '../style/house.css';
 
@@ -31,10 +31,15 @@ const House = () => {
                 <Rating rating={datas.rating} />
             </div>
             <div className='desc_equip_container'>
-                <Collapse_double description={datas.description}/>
-                <Collapse_double equipements={datas.equipement}/>
+                <Collapse
+                    title= "Description"
+                    details={datas.description}
+                />
+                <Collapse
+                    title= "Equipements"
+                    details={datas.equipments}
+                />
             </div>
-            
         </div>
     );
 };
