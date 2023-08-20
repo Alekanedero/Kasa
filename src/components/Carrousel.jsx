@@ -1,7 +1,6 @@
 import { useState } from 'react';
+import arrow from '../assets/arrow.svg';
 import '../style/carrousel.css';
-import arrow from '../assets/arrow.svg'
-
 
 function Carrousel( {images}) {
   const [current, setCurrent] = useState(0)
@@ -28,31 +27,32 @@ function Carrousel( {images}) {
           className={index === current ? 'image active' : 'image'}
           key={index}
         >
-          {index === current && (
-            <div className='carrousel'>
-              <img
-                src={image}
-                alt="image house"
-                className='carrousel__image'
-              />
-              <img
-                src={arrow}
-                alt="flèche directive gauche"
-                className='carrousel__arrow__left'
-                onClick={prevSlide}
-              />
-              <img
-                src={arrow}
-                alt="flèche directive droite"
-                className='carrousel__arrow__right'
-                onClick={nextSlide}
-              />
-            </div>
-          )}
+        {index === current && (
+          <div className='carrousel'>
+            <img
+              src={image}
+              alt="image house"
+              className='carrousel__image'
+            />
+            <img
+              src={arrow}
+              alt="flèche directive gauche"
+              className='carrousel__arrow__left'
+              onClick={prevSlide}
+            />
+            <img
+              src={arrow}
+              alt="flèche directive droite"
+              className='carrousel__arrow__right'
+              onClick={nextSlide}
+            />
+            <p className='carrousel__counter'>1/4</p>
+          </div>
+        )}
         </div>
       ))}
     </section>
   );
-}
+};
 
 export default Carrousel;
