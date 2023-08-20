@@ -9,3 +9,11 @@
    width: 70%;
    gap: 20px;
 }
+
+@media screen and (max-width: 600px) {
+   .about__collapses-container {
+      width: 90%;
+      margin: 20px auto;
+      gap: 15px;
+   }
+}

@@ -16,3 +16,11 @@
     font-weight: 500;
     line-height: 34px;
 }
+
+@media screen and (max-width: 600px) {
+    .footer__description {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+    }
+}
