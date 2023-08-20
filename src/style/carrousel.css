@@ -15,7 +15,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);  
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
   user-select: none;
 }
@@ -27,14 +27,14 @@
   right: 0;
 }
 .carrousel__counter {
+  margin: 0;
   position: absolute;
   bottom: 10px;
   left: 50%;
+  transform: translateX(-50%);
   color: white;
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0em;
-  text-align: center;
 }

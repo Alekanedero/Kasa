@@ -2,7 +2,7 @@ import { useState } from 'react';
 import arrow from '../assets/arrow.svg';
 import '../style/carrousel.css';
 
-function Carrousel( {images}) {
+function Carrousel( {images} ) {
   const [current, setCurrent] = useState(0)
   const length = images.length
 
@@ -12,7 +12,7 @@ function Carrousel( {images}) {
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length -1 : current -1);
-  }
+  };
 
   console.log(current)
 
@@ -31,7 +31,7 @@ function Carrousel( {images}) {
           <div className='carrousel'>
             <img
               src={image}
-              alt="image house"
+              alt="house"
               className='carrousel__image'
             />
             <img
@@ -46,7 +46,7 @@ function Carrousel( {images}) {
               className='carrousel__arrow__right'
               onClick={nextSlide}
             />
-            <p className='carrousel__counter'>1/4</p>
+            <p className='carrousel__counter'>{index+1}/{length}</p>
           </div>
         )}
         </div>

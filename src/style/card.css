@@ -5,13 +5,13 @@
     position: relative;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
 }
 .card__container__img {
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    background: linear-gradient(to bottom, #ff6060 30%, #995353 100%);
 }
 .card__content {
     position: absolute;
@@ -20,12 +20,12 @@
     z-index: 1;
     width: 100%;
     height: 80px;
-    padding: 0px 20px 0 20px;
-    line-height: 25px;
 }
 .card__title {
+    line-height: 25px;
     font-size: 18px;
     font-weight: 500;
+    padding: 0 10px 0 10px;
 }
 .card__img {
     width: 100%;
