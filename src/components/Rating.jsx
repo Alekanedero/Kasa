@@ -7,7 +7,6 @@ import '../style/rating.css'
 
 function Rating({ rating }) {
     // Tableau de 5 étoiles
-    console.log({Rating})
     const arrayRate = Array.from({ length: 5 }); 
 
     return (

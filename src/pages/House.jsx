@@ -14,7 +14,7 @@ const House = () => {
 
     return (
         <div className="house">
-            {/* <Carrousel images={datas.pictures} /> */}
+            <Carrousel images={datas.pictures} />
             <div className='info__container'>
                 <div>
                     <h1 className='info__container__title'>{datas.title}</h1>
