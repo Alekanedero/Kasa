@@ -5,8 +5,9 @@
 }
 .not__title {
    color: #ff6060;
-   font-weight: bold;
+   font-weight: 700;
    font-size: 288px;
+   line-height: 410px;
    letter-spacing: 0em;
    margin: 0 auto;
    margin-top: 50px;
@@ -14,14 +15,37 @@
 }
 .not__description {
    color: #ff6060;
-   font-size: 36px;
    font-weight: 500;
+   font-size: 36px;
+   line-height: 51px;
    margin: 0 auto;
    margin-bottom: 100px;
 }
 .not__link {
    color: #ff6060;
-   font-size: 18px;
    font-weight: 500;
+   font-size: 18px;
+   line-height: 25px;
    margin-top: 150px;
+}
+
+
+@media screen and (max-width: 800px) {
+   .not__title {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 96px;
+      margin-top: 100px;
+   }
+   .not__description {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 20px 0 70px 0;
+      padding: 0 50px 0 50px
+   }
+   .not__link {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 150px;
+   }
 }

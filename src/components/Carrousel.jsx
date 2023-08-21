@@ -21,7 +21,7 @@ function Carrousel( {images} ) {
   }
 
   return (
-    <section>
+    <section className='carrousel-container'>
       {images.map((image, index) => (
         <div
           className={index === current ? 'image active' : 'image'}

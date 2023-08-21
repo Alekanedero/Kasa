@@ -72,7 +72,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .collapse__menu {
         padding-left: 10px;
         height: 30px;

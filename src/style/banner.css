@@ -22,7 +22,7 @@
     text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .banner {
         margin-bottom: 20px;
         margin-top: 20px;
@@ -36,5 +36,7 @@
     .banner__title {
         font-size: 24px;
         line-height: 24px;
+        word-wrap: break-word;
+        padding: 40px;
     }
 }

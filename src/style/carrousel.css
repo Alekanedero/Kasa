@@ -38,3 +38,22 @@
   line-height: 26px;
   letter-spacing: 0em;
 }
+
+
+@media screen and (max-width: 800px) {
+  .carrousel {
+    height: 255px;
+    margin-top: 20px;
+  }
+  .carrousel__image {
+    border-radius: 10px;
+  }
+  .carrousel__arrow__left,
+  .carrousel__arrow__right {
+    width: 24px;
+    height: 24px;
+  }
+  .carrousel__counter {
+    opacity: 0;
+  }
+}

@@ -1,10 +1,10 @@
-.tag_container {
+.tag {
     display: flex;
     flex-direction: row;
     gap: 10px;
     align-items: center;
 }
-.tag {
+.tag__p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,4 +17,13 @@
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0em;
+}
+
+@media screen and (max-width: 800px) {
+    .tag__p {
+        width: 90px;
+        height: 18px;
+        font-size: 10px;
+        line-height: 14px;
+    }
 }

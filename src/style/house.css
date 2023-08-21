@@ -3,14 +3,18 @@
     margin: 0 100px 0 100px;
 }
 
-/* container title+loc et name+img */
-.info__container {
+/* container title+loc et tag */
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
 }
-.info__container__title {
+.container__title__tag {
+    display:flex;
+    flex-direction: column;
+}
+.container__title {
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
@@ -19,7 +23,7 @@
     margin: 0;
     padding: 0;
 }
-.info__container__location {
+.container__location {
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -28,14 +32,19 @@
     margin: 0 0 10px 0;
 }
 
-/* container name+img */
-.name__img__container {
+/* container name+img et rating */
+.container__name__rating {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-end;
 }
-.name {
+.container__name__img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container__name {
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -46,23 +55,62 @@
     width: 70px;
     margin: 0;
 }
-.img__profil {
+.container__img-profil {
     border-radius: 50%;
     object-fit: cover;
     width: 64px;
     height: 64px;
     background-color: #C4C4C4;
 }
-.tag__rating__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px 0 10px 0;
-}
-.desc__equip__container {
+.container-collapse {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     gap: 50px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .house {
+        margin: 0 20px 0 20px;
+    }
+    .container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .container__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .container__location {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .container__name__rating {
+        margin-top: 10px;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .container__name__img {
+        flex-direction: row;
+        align-items: center;
+    }
+    .container__name {
+        font-size: 12px;
+        line-height: 17px;
+        padding-right: 8px;
+        width: 50px;
+    }
+    .container__img-profil {
+        width: 32px;
+        height: 32px;
+    }
+    .container-collapse {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
 }
 

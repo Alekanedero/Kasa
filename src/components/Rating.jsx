@@ -13,6 +13,7 @@ function Rating({ rating }) {
         <div className='rating'>
             {arrayRate.map((_, index) => (
                 <img
+                    className='rating__stars'
                     key={index}
                     src={index < rating ? rateRed : rateGray}
                     alt='étoile'
