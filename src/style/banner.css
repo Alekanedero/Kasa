@@ -22,7 +22,7 @@
     text-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .banner {
         margin-bottom: 20px;
         margin-top: 20px;

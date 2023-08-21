@@ -9,7 +9,7 @@ const About = () => {
 
     return (
         <div className="about">
-            <Banner title="" img={bannerImg} />
+            <Banner img={bannerImg} />
             <div className="about__collapses-container">
                 {aboutData.map((element, index) => (
                     <Collapse

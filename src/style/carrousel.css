@@ -40,7 +40,7 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .carrousel {
     height: 255px;
     margin-top: 20px;

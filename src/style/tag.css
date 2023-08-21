@@ -19,7 +19,7 @@
     letter-spacing: 0em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .tag__p {
         width: 90px;
         height: 18px;

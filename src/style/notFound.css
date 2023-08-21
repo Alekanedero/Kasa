@@ -30,7 +30,7 @@
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
    .not__title {
       font-weight: 700;
       font-size: 96px;

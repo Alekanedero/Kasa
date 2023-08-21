@@ -1,10 +1,10 @@
 import '../style/banner.css';
 
-const Banner = (props) => {
+const Banner = (dataBanner) => {
     return (
         <div className="banner">
-            <img className="banner__img" src={props.img} alt={props.title} />
-            <h1 className="banner__title">{props.title}</h1>
+            <img className="banner__img" src={dataBanner.img} alt="paysage" />
+            <h1 className="banner__title">{dataBanner.title}</h1>
         </div>
     );
 };

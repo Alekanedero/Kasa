@@ -5,7 +5,7 @@ function Tag( {tags}) {
   return (
     <div className='tag'>
       {tags.map((tag, index) => (
-        <div key={`${tag}-${index}`}>
+        <div key={index}>
           <p className='tag__p'>{tag}</p>
         </div>
       ))}
