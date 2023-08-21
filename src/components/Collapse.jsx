@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import chevron from '../assets/chevron.png';
+import PropTypes from 'prop-types';
 import '../style/collapse.css';
 
 const Collapse = ({ title, details }) => {
@@ -45,8 +45,11 @@ const Collapse = ({ title, details }) => {
 };
 
 Collapse.propTypes = {
-   title: PropTypes.string.isRequired,
-   details: PropTypes.string.isRequired,
-};
+   title: PropTypes.string,
+   details: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.arrayOf(PropTypes.string)
+   ])
+}
 
 export default Collapse;

@@ -1,6 +1,7 @@
 import '../style/banner.css';
 
 const Banner = (dataBanner) => {
+
     return (
         <div className="banner">
             <img className="banner__img" src={dataBanner.img} alt="paysage" />
