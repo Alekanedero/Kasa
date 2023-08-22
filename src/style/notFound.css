@@ -29,7 +29,6 @@
    margin-top: 150px;
 }
 
-
 @media screen and (max-width: 900px) {
    .not__title {
       font-weight: 700;
@@ -41,7 +40,7 @@
       font-size: 18px;
       line-height: 26px;
       margin: 20px 0 70px 0;
-      padding: 0 50px 0 50px
+      padding: 0 50px 0 50px;
    }
    .not__link {
       font-size: 14px;

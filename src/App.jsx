@@ -9,25 +9,24 @@ import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+function App() {
+   return (
+      <Router>
+         <div className="app-container">
+            <Header />
+            <div className="content-container">
+               <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/house/:id" element={<House />} />
 
-const App = () => {
-    return (
-        <Router>
-            <div className="app-container">
-                <Header />
-                <div className="content-container">
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/house/:id" element={<House />} />
-
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
-                </div>
-                <Footer />
+                  <Route path="*" element={<NotFound />} />
+               </Routes>
             </div>
-        </Router>
-    );
-};
+            <Footer />
+         </div>
+      </Router>
+   );
+}
 
 export default App;

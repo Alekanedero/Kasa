@@ -1,117 +1,114 @@
 .house {
-    color: #FF6060;
-    margin: 0 100px 0 100px;
+   color: #ff6060;
+   margin: 0 100px 0 100px;
 }
 
 /* container title+loc et tag */
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 30px;
 }
 .container__title__tag {
-    display:flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 .container__title {
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 51px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin: 0;
-    padding: 0;
+   font-size: 36px;
+   font-weight: 500;
+   line-height: 51px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin: 0;
+   padding: 0;
 }
 .container__location {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin: 0 0 10px 0;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 26px;
+   letter-spacing: 0em;
+   text-align: left;
+   margin: 0 0 10px 0;
 }
 
 /* container name+img et rating */
 .container__name__rating {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: flex-end;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: flex-end;
 }
 .container__name__img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 .container__name {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: right;
-    padding-right: 8px;
-    word-wrap: break-word;
-    width: 70px;
-    margin: 0;
+   font-size: 18px;
+   font-weight: 500;
+   line-height: 26px;
+   letter-spacing: 0em;
+   text-align: right;
+   padding-right: 8px;
+   word-wrap: break-word;
+   width: 70px;
+   margin: 0;
 }
 .container__img-profil {
-    border-radius: 50%;
-    object-fit: cover;
-    width: 64px;
-    height: 64px;
-    background-color: #C4C4C4;
+   border-radius: 50%;
+   object-fit: cover;
+   width: 64px;
+   height: 64px;
+   background-color: #c4c4c4;
 }
 .container-collapse {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 20px;
-    gap: 50px;
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   margin-top: 20px;
+   gap: 50px;
 }
-
 
 @media screen and (max-width: 900px) {
-    .house {
-        margin: 0 20px 0 20px;
-    }
-    .container {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .container__title {
-        font-size: 18px;
-        line-height: 26px;
-    }
-    .container__location {
-        font-size: 14px;
-        line-height: 20px;
-    }
-    .container__name__rating {
-        margin-top: 10px;
-        flex-direction: row-reverse;
-        justify-content:space-between;
-        align-items: center;
-    }
-    .container__name__img {
-        flex-direction: row;
-        align-items: center;
-    }
-    .container__name {
-        font-size: 12px;
-        line-height: 17px;
-        padding-right: 8px;
-        width: 50px;
-    }
-    .container__img-profil {
-        width: 32px;
-        height: 32px;
-    }
-    .container-collapse {
-        flex-direction: column;
-        margin-top: 15px;
-        gap: 15px;
-    }
-
+   .house {
+      margin: 0 20px 0 20px;
+   }
+   .container {
+      flex-direction: column;
+      margin-top: 20px;
+   }
+   .container__title {
+      font-size: 18px;
+      line-height: 26px;
+   }
+   .container__location {
+      font-size: 14px;
+      line-height: 20px;
+   }
+   .container__name__rating {
+      margin-top: 10px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .container__name__img {
+      flex-direction: row;
+      align-items: center;
+   }
+   .container__name {
+      font-size: 12px;
+      line-height: 17px;
+      padding-right: 8px;
+      width: 50px;
+   }
+   .container__img-profil {
+      width: 32px;
+      height: 32px;
+   }
+   .container-collapse {
+      flex-direction: column;
+      margin-top: 15px;
+      gap: 15px;
+   }
 }
-

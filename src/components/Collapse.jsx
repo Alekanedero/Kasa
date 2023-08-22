@@ -3,8 +3,7 @@ import chevron from '../assets/chevron.png';
 import PropTypes from 'prop-types';
 import '../style/collapse.css';
 
-const Collapse = ({ title, details }) => {
-
+function Collapse({ title, details }) {
    const [isOpen, setIsOpen] = useState(false);
 
    // toggle = activer ou desactiver
@@ -35,9 +34,13 @@ const Collapse = ({ title, details }) => {
          >
             {/* vérifie si details est un object */}
             {typeof details === 'object' ? (
-               details.map((item, index) => <p className='collapse__details--object' key={index}>{item}</p>)
+               details.map((item, index) => (
+                  <p className="collapse__details--object" key={index}>
+                     {item}
+                  </p>
+               ))
             ) : (
-               <p className='collapse__details--p'>{details}</p>
+               <p className="collapse__details--p">{details}</p>
             )}
          </div>
       </div>
@@ -48,8 +51,8 @@ Collapse.propTypes = {
    title: PropTypes.string,
    details: PropTypes.oneOfType([
       PropTypes.string,
-      PropTypes.arrayOf(PropTypes.string)
-   ])
-}
+      PropTypes.arrayOf(PropTypes.string),
+   ]),
+};
 
 export default Collapse;

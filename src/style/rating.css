@@ -1,12 +1,11 @@
 .rating {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
 }
 
-
 @media screen and (max-width: 900px) {
-    .rating__stars {
-        width: 18px;
-        height: 18px;
-    }
+   .rating__stars {
+      width: 18px;
+      height: 18px;
+   }
 }
