@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../style/notFound.css';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import '../style/notFound.css'
 
 function NotFound() {
    return (
@@ -9,11 +9,13 @@ function NotFound() {
          <p className="not__description">
             Oups! La page que vous demandez n'existe pas.
          </p>
-         <Link className="not__link" to="/">
+         <Link
+            className="not__link"
+            to="/">
             Retourner sur la page d'accueil
          </Link>
       </div>
-   );
+   )
 }
 
-export default NotFound;
+export default NotFound

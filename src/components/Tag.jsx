@@ -1,4 +1,4 @@
-import '../style/tag.css';
+import '../style/tag.css'
 
 function Tag({ tags }) {
    return (
@@ -9,7 +9,7 @@ function Tag({ tags }) {
             </div>
          ))}
       </div>
-   );
+   )
 }
 
-export default Tag;
+export default Tag

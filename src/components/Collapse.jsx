@@ -1,19 +1,21 @@
-import { useState } from 'react';
-import chevron from '../assets/chevron.png';
-import PropTypes from 'prop-types';
-import '../style/collapse.css';
+import { useState } from 'react'
+import chevron from '../assets/chevron.png'
+import PropTypes from 'prop-types'
+import '../style/collapse.css'
 
 function Collapse({ title, details }) {
-   const [isOpen, setIsOpen] = useState(false);
+   const [isOpen, setIsOpen] = useState(false)
 
    // toggle = activer ou desactiver
    const toggle = () => {
-      setIsOpen(!isOpen);
-   };
+      setIsOpen(!isOpen)
+   }
 
    return (
       <div className="collapse">
-         <div className="collapse__menu" onClick={toggle}>
+         <div
+            className="collapse__menu"
+            onClick={toggle}>
             <h3 className="collapse__title">{title}</h3>
             <img
                className={
@@ -30,12 +32,13 @@ function Collapse({ title, details }) {
                isOpen
                   ? 'collapse__details collapse__details--open'
                   : 'collapse__details collapse__details--collapsed'
-            }
-         >
+            }>
             {/* vérifie si details est un object */}
             {typeof details === 'object' ? (
                details.map((item, index) => (
-                  <p className="collapse__details--object" key={index}>
+                  <p
+                     className="collapse__details--object"
+                     key={index}>
                      {item}
                   </p>
                ))
@@ -44,8 +47,8 @@ function Collapse({ title, details }) {
             )}
          </div>
       </div>
-   );
-};
+   )
+}
 
 Collapse.propTypes = {
    title: PropTypes.string,
@@ -53,6 +56,6 @@ Collapse.propTypes = {
       PropTypes.string,
       PropTypes.arrayOf(PropTypes.string),
    ]),
-};
+}
 
-export default Collapse;
+export default Collapse

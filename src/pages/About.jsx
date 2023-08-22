@@ -1,8 +1,8 @@
-import bannerImg from '../assets/about.png';
-import Collapse from '../components/Collapse';
-import Banner from '../components/Banner';
-import aboutData from '../data/aboutData.json';
-import '../style/about.css';
+import bannerImg from '../assets/about.png'
+import Collapse from '../components/Collapse'
+import Banner from '../components/Banner'
+import aboutData from '../data/aboutData.json'
+import '../style/about.css'
 
 function About() {
    return (
@@ -19,7 +19,7 @@ function About() {
             ))}
          </div>
       </div>
-   );
+   )
 }
 
-export default About;
+export default About

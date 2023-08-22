@@ -1,18 +1,18 @@
-import { useState } from 'react';
-import arrow from '../assets/arrow.svg';
-import '../style/slideshow.css';
+import { useState } from 'react'
+import arrow from '../assets/arrow.svg'
+import '../style/slideshow.css'
 
 function Slideshow({ images, alt }) {
-   const [current, setCurrent] = useState(0);
-   const length = images.length;
+   const [current, setCurrent] = useState(0)
+   const length = images.length
 
    const nextSlide = () => {
-      setCurrent(current === length - 1 ? 0 : current + 1);
-   };
+      setCurrent(current === length - 1 ? 0 : current + 1)
+   }
 
    const prevSlide = () => {
-      setCurrent(current === 0 ? length - 1 : current - 1);
-   };
+      setCurrent(current === 0 ? length - 1 : current - 1)
+   }
 
    // vérifier s'il n'y a qu'une seul image
    if (length === 1) {
@@ -20,11 +20,15 @@ function Slideshow({ images, alt }) {
          <section className="slide-container">
             <div className="image active">
                <div className="slide">
-                  <img src={images} alt={alt} className="slide__image" />
+                  <img
+                     src={images}
+                     alt={alt}
+                     className="slide__image"
+                  />
                </div>
             </div>
          </section>
-      );
+      )
    }
 
    return (
@@ -32,11 +36,14 @@ function Slideshow({ images, alt }) {
          {images.map((image, index) => (
             <div
                className={index === current ? 'image active' : 'image'}
-               key={index}
-            >
+               key={index}>
                {index === current && (
                   <div className="slide">
-                     <img src={image} alt={alt} className="slide__image" />
+                     <img
+                        src={image}
+                        alt={alt}
+                        className="slide__image"
+                     />
                      <img
                         src={arrow}
                         alt="flèche directive gauche"
@@ -57,7 +64,7 @@ function Slideshow({ images, alt }) {
             </div>
          ))}
       </section>
-   );
+   )
 }
 
-export default Slideshow;
+export default Slideshow
