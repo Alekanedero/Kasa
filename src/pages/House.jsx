@@ -1,10 +1,11 @@
 import jsonData from '../data/data.json';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate} from 'react-router-dom';
+import { useEffect } from 'react';
 import Slideshow from '../components/Slideshow';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
-import NotFound from './NotFound.jsx';
+// import NotFound from './NotFound.jsx';
 
 import '../style/house.css';
 
@@ -13,10 +14,18 @@ const House = () => {
     const id  = useParams()
     const datas = jsonData.find((house) => house.id === id.id);
 
-    // vérifie si datas est defined ou undefined
+    const navigate = useNavigate();
+
+    // Utilisez useEffect pour gérer la redirection
+    useEffect(() => {
+        if (!datas) {
+            navigate('*');
+        }
+    }, [datas, navigate]);
+
     if (!datas) {
-        return <NotFound />
-    };
+        return null;
+    }
 
     return (
         <div className="house">
