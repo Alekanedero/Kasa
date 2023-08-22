@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../style/notFound.css';
 
-export default function notFound() {
+export default function NotFound() {
   return (
     <div className='not'>
       <h1 className="not__title">404</h1>

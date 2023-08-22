@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import arrow from '../assets/arrow.svg';
-import '../style/carrousel.css';
+import '../style/slideshow.css';
 
-function Carrousel( {images} ) {
+function Slideshow( {images} ) {
   const [current, setCurrent] = useState(0)
   const length = images.length
 
@@ -14,40 +14,58 @@ function Carrousel( {images} ) {
     setCurrent(current === 0 ? length -1 : current -1);
   };
 
+  // vérifier s'il n'y a qu'une seul image
+  if (length === 1) {
+    return (
+      <section className='slide-container'>
+        <div className='image active'>
+          <div className='slide'>
+            <img
+              src= {images}
+              alt="house"
+              className='slide__image'
+            />
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
-    <section className='carrousel-container'>
+    <section className='slide-container'>
       {images.map((image, index) => (
         <div
           className={index === current ? 'image active' : 'image'}
           key={index}
         >
         {index === current && (
-          <div className='carrousel'>
+          <div className='slide'>
             <img
               src={image}
               alt="house"
-              className='carrousel__image'
+              className='slide__image'
             />
             <img
               src={arrow}
               alt="flèche directive gauche"
-              className='carrousel__arrow__left'
+              className='slide__arrow__left'
               onClick={prevSlide}
             />
             <img
               src={arrow}
               alt="flèche directive droite"
-              className='carrousel__arrow__right'
+              className='slide__arrow__right'
               onClick={nextSlide}
             />
-            <p className='carrousel__counter'>{index+1}/{length}</p>
+            <p className='slide__counter'>{index+1}/{length}</p>
           </div>
         )}
         </div>
       ))}
     </section>
   );
+
+
 };
 
-export default Carrousel;
+export default Slideshow;

@@ -1,20 +1,26 @@
 import jsonData from '../data/data.json';
 import { useParams } from 'react-router-dom';
-import Carrousel from '../components/Carrousel';
+import Slideshow from '../components/Slideshow';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
+import NotFound from './NotFound.jsx';
 
 import '../style/house.css';
 
 
 const House = () => {
-    const id = useParams()
+    const id  = useParams()
     const datas = jsonData.find((house) => house.id === id.id);
+
+    // vérifie si datas est defined ou undefined
+    if (!datas) {
+        return <NotFound />
+    };
 
     return (
         <div className="house">
-            <Carrousel images={datas.pictures} />
+            <Slideshow images={datas.pictures} />
             <div className='container'>
                 <div className='container__title__tag'>
                     <div>
@@ -28,7 +34,7 @@ const House = () => {
                 <div className='container__name__rating'>
                     <div className='container__name__img'>
                         <p className='container__name'>{datas.host.name}</p>
-                        <img src={datas.host.picture} alt="photo de profil" className='container__img-profil'/>
+                        <img src={datas.host.picture} alt="profil" className='container__img-profil'/>
                     </div>
                     <div>
                         <Rating rating={datas.rating} />
