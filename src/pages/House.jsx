@@ -5,7 +5,6 @@ import Slideshow from '../components/Slideshow';
 import Tag from '../components/Tag';
 import Rating from '../components/Rating';
 import Collapse from '../components/Collapse';
-// import NotFound from './NotFound.jsx';
 
 import '../style/house.css';
 
@@ -16,7 +15,8 @@ const House = () => {
 
     const navigate = useNavigate();
 
-    // Utilisez useEffect pour gérer la redirection
+    // gestion useNavigate avec useEffect pour gérer la redirection page 404
+    // useEffect pour éviter les mises à jour d'état pendant le rendu
     useEffect(() => {
         if (!datas) {
             navigate('*');
